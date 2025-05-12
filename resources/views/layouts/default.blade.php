@@ -126,7 +126,7 @@
                     <a class="nav-link" href="/contact">联系我们</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/cart"><i class="bi bi-cart-fill"></i> 购物车 <span class="badge bg-primary rounded-pill">0</span></a>
+                    <a class="nav-link {{ request()->routeIs('about') ? 'active' : '' }}" href="{{ route('cart.index') }}"><i class="bi bi-cart-fill"></i>{{ __('购物车') }}<span class="badge bg-primary rounded-pill">0</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/login"><i class="bi bi-person-fill"></i> 登录/注册</a>
